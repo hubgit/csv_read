@@ -15,7 +15,9 @@ foreach (csv_read('input.csv') as $data) {
 ### Specify the column names
 
 ```php
-foreach (csv_read('input.csv', ['id', 'title', 'count']) as $data) {
+$columns = ['id', 'title', 'count'];
+
+foreach (csv_read('input.csv', $columns) as $data) {
   // do something with $data
 }
 ```
