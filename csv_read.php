@@ -4,6 +4,8 @@
  * @param string   $path      The path to the file to be read
  * @param string[] $keys      An optional array of column names
  * @param string   $delimiter The character that separates columns
+ * 
+ * @return Generator
  */
 function csv_read($path, $keys = [], $delimiter = ',') {
   $input = fopen($path, 'r'); // open the file
